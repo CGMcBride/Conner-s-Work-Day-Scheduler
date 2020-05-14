@@ -1,138 +1,71 @@
-body,
-div,
-span,
-applet,
-object,
-iframe h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-section,
-summary,
-time,
-audio {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	font-family: "Montserrat", sans-serif;
-	color: #d1d1d1;
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1;
 }
 
-.calendar {
-	height: 720px;
-	width: 900px;
-	display: inline-flex;
+textarea {
+	background: transparent;
+	border: none;
+	resize: none;
+	color: #000000;
+	border-left: 1px solid black;
+	padding: 10px;
 }
 
-.timings {
-	text-align: right;
-	padding-right: 10px;
-	width: 100px;
-	height: 720px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: white;
-	font-size: 0.5em;
-	box-sizing: border-box;
+.jumbotron {
+	text-align: center;
+	background-color: transparent;
+	color: black;
+	border-radius: 0;
+	border-bottom: 10px solid black;
 }
 
-.timings span {
-	font-size: 200%;
-	color: #696969;
+.description {
+	white-space: pre-wrap;
 }
 
-.days {
-	height: 720px;
-	width: 620px;
-	padding: 0px 10px;
-	background-color: #f0f0f0;
-	border-color: #d1d1d1;
-	border-style: solid;
-	border-width: 1px;
-	box-sizing: border-box;
+.time-block {
+	text-align: center;
+	border-radius: 15px;
 }
 
-.event {
-	background-color: white;
-	border-style: solid;
-	border-width: 1px;
-	border-left-width: 5px;
-	border-color: #d1d1d1;
-	border-left-color: #57b986;
-	padding-left: 10px;
-	padding-top: 5px;
-	position: absolute;
-	font-size: 0.5em;
-	box-sizing: border-box;
+.row {
+	white-space: pre-wrap;
+	height: 80px;
+	border-top: 1px solid white;
 }
 
-.event .title {
-	color: #57b986;
-	font-size: 200%;
+.hour {
+	background-color: #ffffff;
+	color: #000000;
+	border-top: 1px dashed #000000;
+}
+
+.past {
+	background-color: #d3d3d3;
+	color: white;
+}
+
+.present {
+	background-color: #ff6961;
+	color: white;
+}
+
+.future {
+	background-color: #77dd77;
+	color: white;
+}
+
+.saveBtn {
+	border-left: 1px solid black;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: #06aed5;
+	color: white;
+}
+
+.saveBtn i:hover {
+	font-size: 20px;
+	transition: all 0.3s ease-in-out;
 }
