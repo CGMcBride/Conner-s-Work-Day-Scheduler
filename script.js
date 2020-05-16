@@ -32,13 +32,13 @@ for (let i = 0; i < time.length; i++) {
 	// line 29 for was created to refence time and the lenght of the array
 	if (currentHour < time[i]) {
 		console.log(currentHour);
-
+		// calling id through the for loop number so if the number is 9 the id is 9
 		$("#" + time[i])
 			.removeClass("present")
 			.addClass("future");
 	} else if (currentHour > time[i]) {
 		console.log(currentHour);
-
+		// calling id through the for loop number so if the number is 9 the id is 9, if the current time is less than the current hour then you change the id to get a different color
 		$("#" + time[i])
 			.removeClass("present")
 			.addClass("past");
