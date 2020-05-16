@@ -1,6 +1,8 @@
 //alert("test");
 //logic to style elements here
-let myPast = document.querySelector("#past");
+let myPast = $("#past");
+let myPresent = $("#present");
+let myFuture = $("#future");
 //logic to render local storage
 $("#9 .description").val(localStorage.getItem("9"));
 $("#10 .description").val(localStorage.getItem("10"));
